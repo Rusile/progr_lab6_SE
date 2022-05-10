@@ -1,9 +1,0 @@
-Rusile\client\CommandDispatcher\CommandToSend.class
-Rusile\client\CommandDispatcher\AvailableCommands.class
-Rusile\client\Client.class
-Rusile\client\NetworkManager\ClientSocketChannelIO.class
-Rusile\client\CommandDispatcher\CommandListener.class
-Rusile\client\util\ScannerManager.class
-Rusile\client\CommandDispatcher\CommandValidators.class
-Rusile\client\ScriptReader.class
-Rusile\client\NetworkManager\RequestCreator.class
