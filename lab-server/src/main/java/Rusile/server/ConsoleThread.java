@@ -14,6 +14,7 @@ public class ConsoleThread extends Thread {
     @Override
     public void run() {
         ServerConfig.logger.info("Console thread is running");
+        try {
         while (running) {
             String line = scanner.nextLine();
             if ("save".equalsIgnoreCase(line)) {
@@ -25,6 +26,10 @@ public class ConsoleThread extends Thread {
                 ServerConfig.logger.info("Server closed");
                 System.exit(0);
             }
+        }
+      } catch (NoSuchElementException e) {
+            ServerConfig.logger.error("Invalid input!");
+            System.exit(0);
         }
     }
 
